@@ -7,7 +7,7 @@ def open_letter(a, word):
 
 d = {1:"orange", 2:"pizza", 3:"satellite"}
 
-word = d[list(d.keys())[random.randint(1,len(d)-1)]]
+word = d[list(d.keys())[random.randint(0,len(d)-1)]]
 life = 5
 k = len(word)
 hideword = ["*" for i in word]
@@ -26,4 +26,4 @@ if life!=0:
     print(''.join(hideword))
     print("You won!")
 else:
-    print("Ypu lost!")
+    print("Yoiu lost!")
